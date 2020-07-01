@@ -1,0 +1,214 @@
+[
+  {
+    "id": "1",
+    "type": "dropdown",
+    "label": {
+      "en": "User custom mode for LED animations.",
+	  "de": "Benutzerdefinierter Modus für LED-Animationen"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the LED in custom animation mode.",
+	  "de": "Dieser Parameter ({{zwaveParameterIndex}}) bestimmt das Verhalten der LED im benutzerdefinierten Animationsmodus."
+    },
+    "zwave": {
+      "index": 1,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disable custom mode",
+		  "de": "Benutzerdefinierten Modus deaktivieren"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Blink Colors in order",
+		  "de": "Blinkfarben der Reihe nach"
+        }
+      },
+      {
+        "id": "2",
+        "label": {
+          "en": "Randomized color blink",
+		  "de": "Randomisiertes farbiges Blinken"
+        }
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "type": "dropdown",
+    "label": {
+      "en": "Enable or Disable strobe over custom colors.",
+	  "de": "Aktivieren oder Deaktivieren des Stroboskops über benutzerdefinierte Farben."
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the LED in custom animation mode.",
+	  "de": "Dieser Parameter ({{zwaveParameterIndex}}) bestimmt das Verhalten der LED im benutzerdefinierten Animationsmodus."
+    },
+    "zwave": {
+      "index": 2,
+      "size": 1
+    },
+    "value": "0",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disable strobe.",
+		  "de": "Stroboskop deaktivieren"
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Enable strobe.",
+		  "de": "Stroboskop aktivieren."
+        }
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "type": "number",
+    "label": {
+      "en": "Rate of color change in Custom Color Mode",
+      "de": "Rate der Farbänderung im Modus Benutzerdefinierte Farbe"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the speed of custom color mode in changing colors.",
+      "de": "Dieser Parameter ({{zwaveParameterIndex}}) bestimmt die Geschwindigkeit des benutzerdefinierten Farbmodus bei wechselnden Farben."
+    },
+    "zwave": {
+      "index": 3,
+      "size": 4
+    },
+    "attr": {
+      "min": 5,
+      "max": 8640000
+    },
+    "value": 50
+  },
+  {
+    "id": "4",
+    "type": "number",
+    "label": {
+      "en": "Sets the colors in custom color mode",
+      "de": "Stellt die Farben im benutzerdefinierten Farbmodus ein"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the colors used in custom color mode.",
+      "de": "Dieser Parameter ({{zwaveParameterIndex}}) bestimmt die im benutzerdefinierten Farbmodus verwendeten Farben."
+    },
+    "zwave": {
+      "index": 4,
+      "size": 1
+    },
+    "attr": {
+      "min": 1,
+      "max": 127
+    },
+    "value": 1
+  },
+  {
+    "id": "80",
+    "type": "dropdown",
+    "label": {
+      "en": "Enable to send notifications to associated devices when the state of LED Bulb is changed.",
+	  "de": "Aktivieren Sie diese Option, um Benachrichtigungen an zugehörige Geräte (Gruppe 1) zu senden, wenn der Status der LED-Birne geändert wird."
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines if this bulb reports its status",
+	  "de": "Dieser Parameter ({{zwaveParameterIndex}}) bestimmt wenn diese Glühbirne ihren Status meldet."
+    },
+    "zwave": {
+      "index": 80,
+      "size": 1
+    },
+    "value": "1",
+    "values": [
+      {
+        "id": "0",
+        "label": {
+          "en": "Disable.",
+		  "de": "Deaktiviert."
+        }
+      },
+      {
+        "id": "1",
+        "label": {
+          "en": "Send status update.",
+		  "de": "Sendet Status-Update."
+        }
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "type": "number",
+    "label": {
+      "en": "Dim ramp rate",
+      "de": "Dimmrate"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the dim rate of the LED Bulb in 100ms.",
+      "de": "Dieser Parameter ({{zwaveParameterIndex}}) bestimmt die Dimmgeschwindigkeit der LED-Birne in 100ms."
+    },
+    "zwave": {
+      "index": 16,
+      "size": 1
+    },
+    "attr": {
+      "min": 0,
+      "max": 100
+    },
+    "value": 20
+  },
+  {
+    "id": "81",
+    "type": "number",
+    "label": {
+      "en": "Warm White color adjustment",
+      "de": "Einstellung der Farbe Warmweiß"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the warmth of warm white.",
+      "de": "Dieser Parameter ({{zwaveParameterIndex}}) bestimmt die Wärme von warmem Weiß."
+    },
+    "zwave": {
+      "index": 81,
+      "size": 2
+    },
+    "attr": {
+      "min": 2700,
+      "max": 4999
+    },
+    "value": 2700
+  },
+  {
+    "id": "82",
+    "type": "number",
+    "label": {
+      "en": "Cold White color adjustment",
+      "de": "Einstellung der Farbe Kaltweiß"
+    },
+    "hint": {
+      "en": "This parameter ({{zwaveParameterIndex}}) determines the warmth of cold white.",
+      "de": "Dieser Parameter ({{zwaveParameterIndex}}) bestimmt die Wärme von kaltem Weiß."
+    },
+    "zwave": {
+      "index": 81,
+      "size": 2
+    },
+    "attr": {
+      "min": 5000,
+      "max": 6500
+    },
+    "value": 6470
+  }
+  
+]
